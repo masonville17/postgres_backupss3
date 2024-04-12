@@ -23,6 +23,6 @@ ENV ENCRYPTION_PASSWORD **None**
 
 ADD run.sh run.sh
 ADD backup.sh backup.sh
-
+RUN chmod +x /backup.sh
 ENTRYPOINT []
 CMD ["sh", "run.sh"]
